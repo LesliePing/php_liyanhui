@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1" align="center" width="700">
+    <tr>
+        <th>id</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>邮箱</th>
+        <th>价格</th>
+        <th>时间</th>
+    </tr>
+    {foreach $list as $key => $value}
+    <tr>
+        <td>{$value->id}</td>
+        <td>{$value.username.$key}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    {/foreach}
+</table>
+</body>
+</html>
